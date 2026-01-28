@@ -2,5 +2,8 @@ services:
   app:
     image: ghcr.io/haipham22/docs
     container_name: docs
+    command: "hugo server --bind 0.0.0.0 -p 1313 --watch"
+    volumes:
+      - ./:/app
     ports:
       - "1313:1313"
