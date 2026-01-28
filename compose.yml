@@ -1,0 +1,6 @@
+services:
+  app:
+    image: ghcr.io/haipham22/docs
+    container_name: docs
+    ports:
+      - "1313:1313"
